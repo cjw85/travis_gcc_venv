@@ -16,7 +16,7 @@ addons:
       - gcc-4.9
       - g++-4.9
 
-script:
+install:
   - echo $TRAVIS_PYTHON_VERSION
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
   - make install
