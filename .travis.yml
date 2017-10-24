@@ -18,6 +18,8 @@ addons:
 
 install:
   - echo $TRAVIS_PYTHON_VERSION
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
+  - export CXX="g++-4.9" CC="gcc-4.9"
   - make install
 
+scripts:
+  - echo "No testing implemented"
